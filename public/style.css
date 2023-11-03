@@ -1,0 +1,52 @@
+:root {
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+:root,
+body,
+div#root,
+div#App {
+  display: flex;
+}
+
+:root,
+body,
+div#root {
+  flex: 1;
+  min-height: 100%;
+}
+
+body,
+div#App {
+  flex-direction: column;
+}
+
+body {
+  min-height: 100%;
+}
+
+div#root {
+  justify-content: center;
+  align-items: center;
+}
+
+span#hello-world {
+  font-size: 3rem;
+}
+
+img#pixel-alien {
+  animation-name: spinning;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
